@@ -9,4 +9,8 @@ class Candidato extends Model
     public function endereco(){
         return $this->hasOne('Endereco');
     }
+
+    public function telefones(){
+        return $this->hasMany('Telefone');
+    }
 }
