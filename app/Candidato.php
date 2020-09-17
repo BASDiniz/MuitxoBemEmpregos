@@ -13,4 +13,8 @@ class Candidato extends Model
     public function telefones(){
         return $this->hasMany('Telefone');
     }
+
+    public function vagaEmpregos(){
+        return $this->hasMany('VagaEmprego');
+    }
 }
